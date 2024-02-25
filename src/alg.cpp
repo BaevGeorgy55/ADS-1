@@ -5,6 +5,16 @@
 
 bool checkPrime(uint64_t value) {
 // вставьте код функции
+  for (int i = 2; i < (value/2); i++)
+    {
+        if (value % i == 0)
+        {
+            std::cout << "false" << std::endl;
+            return 0;
+        }
+    }
+    std::cout << "true" << std::endl;
+    return 0;
 }
 
 uint64_t nPrime(uint64_t n) {
