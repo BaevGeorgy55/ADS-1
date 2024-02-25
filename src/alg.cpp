@@ -8,13 +8,9 @@ bool checkPrime(uint64_t value) {
   for (int i = 2; i < (value/2); i++)
     {
         if (value % i == 0)
-        {
-            std::cout << "false" << std::endl;
-            return 0;
-        }
+            return false;
     }
-    std::cout << "true" << std::endl;
-    return 0;
+    return true;
 }
 
 uint64_t nPrime(uint64_t n) {
