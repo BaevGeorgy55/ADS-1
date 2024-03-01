@@ -52,14 +52,14 @@ int size = 15;
 int arr[size] {0};
 int prost[size] {0};
 int cntr = 0, a = 0;
-  for (int i = 0; i < size; i++){
+  for (int i = 0; i < size; i++) {
     arr[i] = i + 1;
   }
-  for (int i = 0; i < size; i++){
+  for (int i = 0; i < size; i++) {
     if (checkPrime(arr[i]) && (arr[i] != 1))
       prost[cntr++] = arr[i];
   }
-  for (int i = 0; i < hbound; i++){
+  for (int i = 0; i < hbound; i++) {
     a += prost[i];
   }
   return a;
