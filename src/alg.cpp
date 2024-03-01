@@ -16,7 +16,6 @@ bool checkPrime(uint64_t value) {
 uint64_t nPrime(uint64_t n) {
 // вставьте код функции
     int size = 100;
-    int a;
     int cntr = 0;
     int arr[size] {0};
     int prost[size] {0};
@@ -28,9 +27,9 @@ uint64_t nPrime(uint64_t n) {
             prost[cntr++] = arr[i];
         }
     }
-    std::cin >> a;
+    std::cin >> n;
     for (int i = 0; i < size; i++) {
-        if (a == i) {
+        if (n == i) {
             std::cout << prost[i-1];
         }
     }
