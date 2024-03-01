@@ -38,7 +38,6 @@ uint64_t nPrime(uint64_t n) {
 uint64_t nextPrime(uint64_t value) {
 // вставьте код функции
     int size = 10;
-    int a;
     int cntr = 0;
     int arr[size] {0};
     int prost[size] {0};
@@ -46,8 +45,8 @@ uint64_t nextPrime(uint64_t value) {
         arr[i] = i + 1;
         std::cout << arr[i] << " ";
     }
-    std::cin >> a;
-    for (int i = a + 1; i < size; i++) {
+    std::cin >> value;
+    for (int i = value + 1; i < size; i++) {
         if (checkPrime(arr[i]) && arr[i] != 1) {
             std::cout << arr[i];
             return 0;
