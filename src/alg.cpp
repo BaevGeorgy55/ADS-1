@@ -18,7 +18,7 @@ uint64_t nPrime(uint64_t n) {
     uint64_t cntr = 0;
     while (cntr < n) {
       num++;
-      if (chekPrime(num)) {
+      if (checkPrime(num)) {
         cntr++;
       }
     }
@@ -40,8 +40,8 @@ uint64_t sumPrime(uint64_t hbound) {
 // вставьте код функции
   uint64_t a = 0;
   for (uint64_t i = 2; i < hbound; i++) {
-    if (checkPrime(i)) { 
-      a += i; 
+    if (checkPrime(i)) {
+      a += i;
     }
   }
   return a;
