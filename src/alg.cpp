@@ -16,7 +16,7 @@ uint64_t nPrime(uint64_t n) {
 // вставьте код функции
     uint64_t num = 1;
     uint64_t cntr = 0;
-    while (cntr < n) {
+    while (cntr <= n) {
       num++;
       if (checkPrime(num)) {
         cntr++;
@@ -27,7 +27,7 @@ uint64_t nPrime(uint64_t n) {
 
 uint64_t nextPrime(uint64_t value) {
 // вставьте код функции
-    uint64_t y = 0;
+    uint64_t y = value + 1;
     while (true) {
       if (checkPrime(y)) {
         return y;
